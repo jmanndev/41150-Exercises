@@ -1,5 +1,5 @@
-# 2. Write a Python program to construct the following pattern, using a nested
-# for loop.
+# 2. Write a Python program to construct the
+# following pattern, using a nested for loop.
 # *
 # * *
 # * * *
