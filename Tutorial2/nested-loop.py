@@ -10,15 +10,22 @@
 # * *
 # *
 
-def printRow(numOfStars):
-    for i in range(0, numOfStars):
+
+def inputNumber(prompt):
+    while True:
+        try:
+            userInput = int(input(prompt))
+        except (ValueError):
+            print("   Not a number! Try again.")
+            continue
+        else:
+            return userInput
+            break
+
+
+length = inputNumber("Enter number: ")
+
+for i in range(1-length, length):
+    for j in range(0, length - abs(i)):
         print('*', end="")
     print('')
-
-biggestRowLength = 5
-for i in range(biggestRowLength):
-    printRow(i)
-
-# Reverse loop
-for i in range(biggestRowLength, 0, -1):
-    printRow(i)
